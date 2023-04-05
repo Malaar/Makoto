@@ -1,0 +1,837 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 56;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		02842A3829DDB7CC003095CA /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02842A3729DDB7CC003095CA /* AppDelegate.swift */; };
+		02842A3A29DDB7CC003095CA /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02842A3929DDB7CC003095CA /* SceneDelegate.swift */; };
+		02842A3C29DDB7CC003095CA /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02842A3B29DDB7CC003095CA /* ViewController.swift */; };
+		02842A3F29DDB7CC003095CA /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 02842A3D29DDB7CC003095CA /* Main.storyboard */; };
+		02842A4129DDB7D2003095CA /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 02842A4029DDB7D2003095CA /* Assets.xcassets */; };
+		02842A4429DDB7D2003095CA /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 02842A4229DDB7D2003095CA /* LaunchScreen.storyboard */; };
+		02842A4F29DDB7D3003095CA /* MakotoTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02842A4E29DDB7D3003095CA /* MakotoTests.swift */; };
+		02842A5929DDB7D3003095CA /* MakotoUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02842A5829DDB7D3003095CA /* MakotoUITests.swift */; };
+		02842A5B29DDB7D3003095CA /* MakotoUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02842A5A29DDB7D3003095CA /* MakotoUITestsLaunchTests.swift */; };
+		02842A6E29DDB856003095CA /* KeyboardViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02842A6D29DDB856003095CA /* KeyboardViewController.swift */; };
+		02842A7229DDB856003095CA /* MakotoKeyboard.appex in Embed Foundation Extensions */ = {isa = PBXBuildFile; fileRef = 02842A6B29DDB855003095CA /* MakotoKeyboard.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		02842A7929DDB886003095CA /* Lottie in Frameworks */ = {isa = PBXBuildFile; productRef = 02842A7829DDB886003095CA /* Lottie */; };
+		02842A7C29DDB8A0003095CA /* Reusable in Frameworks */ = {isa = PBXBuildFile; productRef = 02842A7B29DDB8A0003095CA /* Reusable */; };
+		02842A7F29DDB8BF003095CA /* Lottie in Frameworks */ = {isa = PBXBuildFile; productRef = 02842A7E29DDB8BF003095CA /* Lottie */; };
+		02842A8129DDB8BF003095CA /* Reusable in Frameworks */ = {isa = PBXBuildFile; productRef = 02842A8029DDB8BF003095CA /* Reusable */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		02842A4B29DDB7D3003095CA /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 02842A2C29DDB7CC003095CA /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 02842A3329DDB7CC003095CA;
+			remoteInfo = Makoto;
+		};
+		02842A5529DDB7D3003095CA /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 02842A2C29DDB7CC003095CA /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 02842A3329DDB7CC003095CA;
+			remoteInfo = Makoto;
+		};
+		02842A7029DDB856003095CA /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 02842A2C29DDB7CC003095CA /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 02842A6A29DDB855003095CA;
+			remoteInfo = MakotoKeyboard;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		02842A7629DDB856003095CA /* Embed Foundation Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+				02842A7229DDB856003095CA /* MakotoKeyboard.appex in Embed Foundation Extensions */,
+			);
+			name = "Embed Foundation Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		02842A3429DDB7CC003095CA /* Makoto.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Makoto.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		02842A3729DDB7CC003095CA /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		02842A3929DDB7CC003095CA /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		02842A3B29DDB7CC003095CA /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		02842A3E29DDB7CC003095CA /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		02842A4029DDB7D2003095CA /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		02842A4329DDB7D2003095CA /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		02842A4529DDB7D2003095CA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		02842A4A29DDB7D3003095CA /* MakotoTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MakotoTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		02842A4E29DDB7D3003095CA /* MakotoTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MakotoTests.swift; sourceTree = "<group>"; };
+		02842A5429DDB7D3003095CA /* MakotoUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MakotoUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		02842A5829DDB7D3003095CA /* MakotoUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MakotoUITests.swift; sourceTree = "<group>"; };
+		02842A5A29DDB7D3003095CA /* MakotoUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MakotoUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		02842A6B29DDB855003095CA /* MakotoKeyboard.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = MakotoKeyboard.appex; sourceTree = BUILT_PRODUCTS_DIR; };
+		02842A6D29DDB856003095CA /* KeyboardViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KeyboardViewController.swift; sourceTree = "<group>"; };
+		02842A6F29DDB856003095CA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		02842A3129DDB7CC003095CA /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				02842A7929DDB886003095CA /* Lottie in Frameworks */,
+				02842A7C29DDB8A0003095CA /* Reusable in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		02842A4729DDB7D3003095CA /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		02842A5129DDB7D3003095CA /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		02842A6829DDB855003095CA /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				02842A7F29DDB8BF003095CA /* Lottie in Frameworks */,
+				02842A8129DDB8BF003095CA /* Reusable in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		02842A2B29DDB7CC003095CA = {
+			isa = PBXGroup;
+			children = (
+				02842A3629DDB7CC003095CA /* Makoto */,
+				02842A4D29DDB7D3003095CA /* MakotoTests */,
+				02842A5729DDB7D3003095CA /* MakotoUITests */,
+				02842A6C29DDB856003095CA /* MakotoKeyboard */,
+				02842A3529DDB7CC003095CA /* Products */,
+				02842A7D29DDB8BF003095CA /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		02842A3529DDB7CC003095CA /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				02842A3429DDB7CC003095CA /* Makoto.app */,
+				02842A4A29DDB7D3003095CA /* MakotoTests.xctest */,
+				02842A5429DDB7D3003095CA /* MakotoUITests.xctest */,
+				02842A6B29DDB855003095CA /* MakotoKeyboard.appex */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		02842A3629DDB7CC003095CA /* Makoto */ = {
+			isa = PBXGroup;
+			children = (
+				02842A3729DDB7CC003095CA /* AppDelegate.swift */,
+				02842A3929DDB7CC003095CA /* SceneDelegate.swift */,
+				02842A3B29DDB7CC003095CA /* ViewController.swift */,
+				02842A3D29DDB7CC003095CA /* Main.storyboard */,
+				02842A4029DDB7D2003095CA /* Assets.xcassets */,
+				02842A4229DDB7D2003095CA /* LaunchScreen.storyboard */,
+				02842A4529DDB7D2003095CA /* Info.plist */,
+			);
+			path = Makoto;
+			sourceTree = "<group>";
+		};
+		02842A4D29DDB7D3003095CA /* MakotoTests */ = {
+			isa = PBXGroup;
+			children = (
+				02842A4E29DDB7D3003095CA /* MakotoTests.swift */,
+			);
+			path = MakotoTests;
+			sourceTree = "<group>";
+		};
+		02842A5729DDB7D3003095CA /* MakotoUITests */ = {
+			isa = PBXGroup;
+			children = (
+				02842A5829DDB7D3003095CA /* MakotoUITests.swift */,
+				02842A5A29DDB7D3003095CA /* MakotoUITestsLaunchTests.swift */,
+			);
+			path = MakotoUITests;
+			sourceTree = "<group>";
+		};
+		02842A6C29DDB856003095CA /* MakotoKeyboard */ = {
+			isa = PBXGroup;
+			children = (
+				02842A6D29DDB856003095CA /* KeyboardViewController.swift */,
+				02842A6F29DDB856003095CA /* Info.plist */,
+			);
+			path = MakotoKeyboard;
+			sourceTree = "<group>";
+		};
+		02842A7D29DDB8BF003095CA /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		02842A3329DDB7CC003095CA /* Makoto */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 02842A5E29DDB7D3003095CA /* Build configuration list for PBXNativeTarget "Makoto" */;
+			buildPhases = (
+				02842A3029DDB7CC003095CA /* Sources */,
+				02842A3129DDB7CC003095CA /* Frameworks */,
+				02842A3229DDB7CC003095CA /* Resources */,
+				02842A7629DDB856003095CA /* Embed Foundation Extensions */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				02842A7129DDB856003095CA /* PBXTargetDependency */,
+			);
+			name = Makoto;
+			packageProductDependencies = (
+				02842A7829DDB886003095CA /* Lottie */,
+				02842A7B29DDB8A0003095CA /* Reusable */,
+			);
+			productName = Makoto;
+			productReference = 02842A3429DDB7CC003095CA /* Makoto.app */;
+			productType = "com.apple.product-type.application";
+		};
+		02842A4929DDB7D3003095CA /* MakotoTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 02842A6129DDB7D3003095CA /* Build configuration list for PBXNativeTarget "MakotoTests" */;
+			buildPhases = (
+				02842A4629DDB7D3003095CA /* Sources */,
+				02842A4729DDB7D3003095CA /* Frameworks */,
+				02842A4829DDB7D3003095CA /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				02842A4C29DDB7D3003095CA /* PBXTargetDependency */,
+			);
+			name = MakotoTests;
+			productName = MakotoTests;
+			productReference = 02842A4A29DDB7D3003095CA /* MakotoTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		02842A5329DDB7D3003095CA /* MakotoUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 02842A6429DDB7D3003095CA /* Build configuration list for PBXNativeTarget "MakotoUITests" */;
+			buildPhases = (
+				02842A5029DDB7D3003095CA /* Sources */,
+				02842A5129DDB7D3003095CA /* Frameworks */,
+				02842A5229DDB7D3003095CA /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				02842A5629DDB7D3003095CA /* PBXTargetDependency */,
+			);
+			name = MakotoUITests;
+			productName = MakotoUITests;
+			productReference = 02842A5429DDB7D3003095CA /* MakotoUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+		02842A6A29DDB855003095CA /* MakotoKeyboard */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 02842A7329DDB856003095CA /* Build configuration list for PBXNativeTarget "MakotoKeyboard" */;
+			buildPhases = (
+				02842A6729DDB855003095CA /* Sources */,
+				02842A6829DDB855003095CA /* Frameworks */,
+				02842A6929DDB855003095CA /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = MakotoKeyboard;
+			packageProductDependencies = (
+				02842A7E29DDB8BF003095CA /* Lottie */,
+				02842A8029DDB8BF003095CA /* Reusable */,
+			);
+			productName = MakotoKeyboard;
+			productReference = 02842A6B29DDB855003095CA /* MakotoKeyboard.appex */;
+			productType = "com.apple.product-type.app-extension";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		02842A2C29DDB7CC003095CA /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1420;
+				LastUpgradeCheck = 1420;
+				TargetAttributes = {
+					02842A3329DDB7CC003095CA = {
+						CreatedOnToolsVersion = 14.2;
+					};
+					02842A4929DDB7D3003095CA = {
+						CreatedOnToolsVersion = 14.2;
+						TestTargetID = 02842A3329DDB7CC003095CA;
+					};
+					02842A5329DDB7D3003095CA = {
+						CreatedOnToolsVersion = 14.2;
+						TestTargetID = 02842A3329DDB7CC003095CA;
+					};
+					02842A6A29DDB855003095CA = {
+						CreatedOnToolsVersion = 14.2;
+					};
+				};
+			};
+			buildConfigurationList = 02842A2F29DDB7CC003095CA /* Build configuration list for PBXProject "Makoto" */;
+			compatibilityVersion = "Xcode 14.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 02842A2B29DDB7CC003095CA;
+			packageReferences = (
+				02842A7729DDB886003095CA /* XCRemoteSwiftPackageReference "lottie-ios" */,
+				02842A7A29DDB8A0003095CA /* XCRemoteSwiftPackageReference "Reusable" */,
+			);
+			productRefGroup = 02842A3529DDB7CC003095CA /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				02842A3329DDB7CC003095CA /* Makoto */,
+				02842A4929DDB7D3003095CA /* MakotoTests */,
+				02842A5329DDB7D3003095CA /* MakotoUITests */,
+				02842A6A29DDB855003095CA /* MakotoKeyboard */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		02842A3229DDB7CC003095CA /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				02842A4429DDB7D2003095CA /* LaunchScreen.storyboard in Resources */,
+				02842A4129DDB7D2003095CA /* Assets.xcassets in Resources */,
+				02842A3F29DDB7CC003095CA /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		02842A4829DDB7D3003095CA /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		02842A5229DDB7D3003095CA /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		02842A6929DDB855003095CA /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		02842A3029DDB7CC003095CA /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				02842A3C29DDB7CC003095CA /* ViewController.swift in Sources */,
+				02842A3829DDB7CC003095CA /* AppDelegate.swift in Sources */,
+				02842A3A29DDB7CC003095CA /* SceneDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		02842A4629DDB7D3003095CA /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				02842A4F29DDB7D3003095CA /* MakotoTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		02842A5029DDB7D3003095CA /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				02842A5929DDB7D3003095CA /* MakotoUITests.swift in Sources */,
+				02842A5B29DDB7D3003095CA /* MakotoUITestsLaunchTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		02842A6729DDB855003095CA /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				02842A6E29DDB856003095CA /* KeyboardViewController.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		02842A4C29DDB7D3003095CA /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 02842A3329DDB7CC003095CA /* Makoto */;
+			targetProxy = 02842A4B29DDB7D3003095CA /* PBXContainerItemProxy */;
+		};
+		02842A5629DDB7D3003095CA /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 02842A3329DDB7CC003095CA /* Makoto */;
+			targetProxy = 02842A5529DDB7D3003095CA /* PBXContainerItemProxy */;
+		};
+		02842A7129DDB856003095CA /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 02842A6A29DDB855003095CA /* MakotoKeyboard */;
+			targetProxy = 02842A7029DDB856003095CA /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		02842A3D29DDB7CC003095CA /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				02842A3E29DDB7CC003095CA /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		02842A4229DDB7D2003095CA /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				02842A4329DDB7D2003095CA /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		02842A5C29DDB7D3003095CA /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.2;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		02842A5D29DDB7D3003095CA /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		02842A5F29DDB7D3003095CA /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_IDENTITY = "Apple Development";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = "";
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = Makoto/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = Makoto;
+				INFOPLIST_KEY_NSMicrophoneUsageDescription = "We need access to you microphone to record and recognize your voice";
+				INFOPLIST_KEY_NSSpeechRecognitionUsageDescription = "We need to recognize your voice to convert it into text";
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.malaar.Makoto;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		02842A6029DDB7D3003095CA /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_IDENTITY = "Apple Development";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = "";
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = Makoto/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = Makoto;
+				INFOPLIST_KEY_NSMicrophoneUsageDescription = "We need access to you microphone to record and recognize your voice";
+				INFOPLIST_KEY_NSSpeechRecognitionUsageDescription = "We need to recognize your voice to convert it into text";
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.malaar.Makoto;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		02842A6229DDB7D3003095CA /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.2;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.malaar.MakotoTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Makoto.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/Makoto";
+			};
+			name = Debug;
+		};
+		02842A6329DDB7D3003095CA /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.2;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.malaar.MakotoTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Makoto.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/Makoto";
+			};
+			name = Release;
+		};
+		02842A6529DDB7D3003095CA /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.malaar.MakotoUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = Makoto;
+			};
+			name = Debug;
+		};
+		02842A6629DDB7D3003095CA /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.malaar.MakotoUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = Makoto;
+			};
+			name = Release;
+		};
+		02842A7429DDB856003095CA /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "Apple Development";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = "";
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = MakotoKeyboard/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = MakotoKeyboard;
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.malaar.Makoto.MakotoKeyboard;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				SKIP_INSTALL = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		02842A7529DDB856003095CA /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "Apple Development";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = "";
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = MakotoKeyboard/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = MakotoKeyboard;
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.malaar.Makoto.MakotoKeyboard;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				SKIP_INSTALL = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		02842A2F29DDB7CC003095CA /* Build configuration list for PBXProject "Makoto" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				02842A5C29DDB7D3003095CA /* Debug */,
+				02842A5D29DDB7D3003095CA /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		02842A5E29DDB7D3003095CA /* Build configuration list for PBXNativeTarget "Makoto" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				02842A5F29DDB7D3003095CA /* Debug */,
+				02842A6029DDB7D3003095CA /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		02842A6129DDB7D3003095CA /* Build configuration list for PBXNativeTarget "MakotoTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				02842A6229DDB7D3003095CA /* Debug */,
+				02842A6329DDB7D3003095CA /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		02842A6429DDB7D3003095CA /* Build configuration list for PBXNativeTarget "MakotoUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				02842A6529DDB7D3003095CA /* Debug */,
+				02842A6629DDB7D3003095CA /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		02842A7329DDB856003095CA /* Build configuration list for PBXNativeTarget "MakotoKeyboard" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				02842A7429DDB856003095CA /* Debug */,
+				02842A7529DDB856003095CA /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		02842A7729DDB886003095CA /* XCRemoteSwiftPackageReference "lottie-ios" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/airbnb/lottie-ios.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 4.0.0;
+			};
+		};
+		02842A7A29DDB8A0003095CA /* XCRemoteSwiftPackageReference "Reusable" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/AliSoftware/Reusable";
+			requirement = {
+				branch = main;
+				kind = branch;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		02842A7829DDB886003095CA /* Lottie */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 02842A7729DDB886003095CA /* XCRemoteSwiftPackageReference "lottie-ios" */;
+			productName = Lottie;
+		};
+		02842A7B29DDB8A0003095CA /* Reusable */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 02842A7A29DDB8A0003095CA /* XCRemoteSwiftPackageReference "Reusable" */;
+			productName = Reusable;
+		};
+		02842A7E29DDB8BF003095CA /* Lottie */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 02842A7729DDB886003095CA /* XCRemoteSwiftPackageReference "lottie-ios" */;
+			productName = Lottie;
+		};
+		02842A8029DDB8BF003095CA /* Reusable */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 02842A7A29DDB8A0003095CA /* XCRemoteSwiftPackageReference "Reusable" */;
+			productName = Reusable;
+		};
+/* End XCSwiftPackageProductDependency section */
+	};
+	rootObject = 02842A2C29DDB7CC003095CA /* Project object */;
+}

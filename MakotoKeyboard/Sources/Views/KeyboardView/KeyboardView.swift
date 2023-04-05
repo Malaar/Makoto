@@ -12,24 +12,40 @@ import Reusable
 
 final class KeyboardView: UIView, NibLoadable {
     
+    /// Represent state of `KeyboardView`. View is self-configured based on state
     enum State: Equatable {
+        
+        /// Recognition is enabled
         case enabled
+        
+        /// Recognition is disabled
         case disabled
+        
+        /// Recognition is in progress
         case inProgress
+        
+        /// Recognition is failed. Error message displays on the view
         case failed(_ message: String)
     }
     
+    /// Action produced by `KeyboardView`
     enum Action {
+        
+        /// Microphone button was pressed
         case micPressed
+        
+        /// Microphone button was released
         case micReleased
     }
     
     // MARK: - Input & Output
     
+    /// Setup state to configure this view
     var state: State = .disabled {
         didSet { updateState(state) }
     }
     
+    /// Action emitting by this view
     var action: AnyPublisher<Action, Never> {
         actionSubject.eraseToAnyPublisher()
     }

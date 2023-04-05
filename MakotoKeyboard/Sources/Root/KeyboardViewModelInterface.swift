@@ -15,13 +15,23 @@ protocol KeyboardViewModelType {
 extension KeyboardViewModel {
     
     enum Input {
+        
+        /// View was appeared
         case appear
+        
+        /// Need start speech recognition
         case startRecognition
+        
+        /// Need stop speech recognition
         case stopRecognition
     }
     
     struct Output {
+        
+        /// Recognize some text
         let recognizedText: AnyPublisher<String, Never>
+        
+        /// New state for keyboard
         let keyboardState: AnyPublisher<KeyboardView.State, Never>
     }
 }

@@ -10,10 +10,20 @@ import AVFoundation
 import Speech
 
 public protocol SpeechRecognizing {
+    
+    /// Check is voice recognition authorized
     var isAuthorized: Bool { get }
+    
+    /// Try to authorize. Always call it firstly before any other usage
     func authorize(_ callback: @escaping (RecognitionError?) -> Void)
+    
+    /// Prepare for recognition. Always call this method before `startRecognition`
     func prepare(for locale: Locale)
+    
+    /// Start process of voice recognition
     func startRecognition(_ callback: @escaping (Result<String, RecognitionError>) -> Void)
+    
+    /// Stop process of voice recognition
     func stopRecognition()
 }
 
@@ -39,6 +49,7 @@ public final class SpeechRecognizer: SpeechRecognizing {
             callback(nil)
         }
     }
+    
     
     public var isAuthorized: Bool {
         guard case .authorized = SFSpeechRecognizer.authorizationStatus() else { return false }
@@ -84,8 +95,8 @@ public final class SpeechRecognizer: SpeechRecognizing {
             return
         }
         
-//        try? audioSession.setCategory(.playAndRecord, mode: .measurement, options: .defaultToSpeaker)
-//        try? audioSession.setActive(true, options: .notifyOthersOnDeactivation)
+        try? audioSession.setCategory(.playAndRecord, mode: .measurement, options: .defaultToSpeaker)
+        try? audioSession.setActive(true, options: .notifyOthersOnDeactivation)
         
         task = recognizer.recognitionTask(with: request, resultHandler: { result, error in
             guard let result = result else {

@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="21507" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina6_12" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21505"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="iN0-l3-epB" customClass="KeyboardView" customModule="MakotoKeyboard" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="393" height="205"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="eSE-H1-cSU" userLabel="contentView">
+                    <rect key="frame" x="0.0" y="0.0" width="393" height="205"/>
+                    <subviews>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Press and hold button to speak" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Ltn-2p-08s" userLabel="titleLabel">
+                            <rect key="frame" x="12" y="11.999999999999998" width="369" height="20.333333333333329"/>
+                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                            <nil key="textColor"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" spacing="12" translatesAutoresizingMaskIntoConstraints="NO" id="VJN-53-rAJ">
+                            <rect key="frame" x="12" y="44.333333333333343" width="369" height="132"/>
+                            <subviews>
+                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="3rH-HY-YOe" userLabel="micButton">
+                                    <rect key="frame" x="151.66666666666666" y="0.0" width="66" height="66"/>
+                                    <constraints>
+                                        <constraint firstAttribute="width" constant="66" id="L23-7d-0tC"/>
+                                        <constraint firstAttribute="height" constant="66" id="v4e-bf-ks8"/>
+                                    </constraints>
+                                    <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                    <state key="normal" image="mic"/>
+                                    <state key="disabled" image="micDisabled"/>
+                                    <state key="highlighted" image="micSelected"/>
+                                    <connections>
+                                        <action selector="micPressed:" destination="iN0-l3-epB" eventType="touchDown" id="ZOr-jq-V0T"/>
+                                        <action selector="micReleased:" destination="iN0-l3-epB" eventType="touchUpOutside" id="QZX-E4-DHX"/>
+                                        <action selector="micReleased:" destination="iN0-l3-epB" eventType="touchUpInside" id="RQw-IK-B3A"/>
+                                    </connections>
+                                </button>
+                                <view contentMode="scaleAspectFill" translatesAutoresizingMaskIntoConstraints="NO" id="5Od-8Z-Ito" userLabel="animationView" customClass="LottieAnimationView" customModule="Lottie">
+                                    <rect key="frame" x="87" y="78" width="195" height="54"/>
+                                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    <constraints>
+                                        <constraint firstAttribute="height" constant="54" id="5tZ-sx-4yl"/>
+                                        <constraint firstAttribute="width" constant="195" id="gCb-Nm-Fgu"/>
+                                    </constraints>
+                                </view>
+                                <label hidden="YES" opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Can't recognize speech" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="3" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Lsr-r9-fls" userLabel="errorLabel">
+                                    <rect key="frame" x="94.666666666666671" y="132" width="179.66666666666663" height="0.0"/>
+                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                    <nil key="textColor"/>
+                                    <nil key="highlightedColor"/>
+                                </label>
+                            </subviews>
+                        </stackView>
+                    </subviews>
+                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <constraints>
+                        <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="205" id="0xi-9X-PcV"/>
+                        <constraint firstItem="VJN-53-rAJ" firstAttribute="leading" secondItem="eSE-H1-cSU" secondAttribute="leading" constant="12" id="5QC-r3-BNo"/>
+                        <constraint firstAttribute="trailing" secondItem="VJN-53-rAJ" secondAttribute="trailing" constant="12" id="PUX-LK-aa5"/>
+                        <constraint firstItem="Ltn-2p-08s" firstAttribute="leading" secondItem="VJN-53-rAJ" secondAttribute="leading" id="R0k-ze-DvJ"/>
+                        <constraint firstItem="Ltn-2p-08s" firstAttribute="top" secondItem="eSE-H1-cSU" secondAttribute="top" constant="12" id="gVp-nd-2KW"/>
+                        <constraint firstItem="Ltn-2p-08s" firstAttribute="trailing" secondItem="VJN-53-rAJ" secondAttribute="trailing" id="n14-u8-VcW"/>
+                        <constraint firstItem="VJN-53-rAJ" firstAttribute="top" secondItem="Ltn-2p-08s" secondAttribute="bottom" constant="12" id="yFT-wt-22L"/>
+                        <constraint firstAttribute="bottom" relation="greaterThanOrEqual" secondItem="VJN-53-rAJ" secondAttribute="bottom" constant="12" id="zMU-1H-Bor"/>
+                    </constraints>
+                </view>
+            </subviews>
+            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+            <constraints>
+                <constraint firstAttribute="bottom" secondItem="eSE-H1-cSU" secondAttribute="bottom" id="RWI-JO-30g"/>
+                <constraint firstItem="eSE-H1-cSU" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="SgL-Pd-EDv"/>
+                <constraint firstItem="eSE-H1-cSU" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" id="bvw-ak-vYl"/>
+                <constraint firstAttribute="trailing" secondItem="eSE-H1-cSU" secondAttribute="trailing" id="cZg-VF-HaC"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <connections>
+                <outlet property="animationView" destination="5Od-8Z-Ito" id="vgF-WS-SrS"/>
+                <outlet property="errorLabel" destination="Lsr-r9-fls" id="2TQ-sd-v18"/>
+                <outlet property="micButton" destination="3rH-HY-YOe" id="TaR-gs-MMG"/>
+                <outlet property="titleLabel" destination="Ltn-2p-08s" id="i6T-4S-yza"/>
+            </connections>
+            <point key="canvasLocation" x="130.53435114503816" y="-239.08450704225353"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="mic" width="64" height="64"/>
+        <image name="micDisabled" width="64" height="64"/>
+        <image name="micSelected" width="64" height="64"/>
+    </resources>
+</document>

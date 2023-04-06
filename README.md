@@ -51,9 +51,9 @@ Default dictation button appears on custom keyboard after speech recognition. Ne
 
 ## Author
 
-* **[Andrew Korshilovskiy](http://www.linkedin.com/in/korshilovskiy)** - development
+* **[Andrii Korshylovskyi](http://www.linkedin.com/in/korshilovskiy)** - development
 
 ## License
 
 (c) All rights reserved.
-This project is licensed under the **Proprietary Software License** - see the [LICENSE](http://www.binpress.com/license/view/l/358023be402acff778a934083b76b86f) url for details
+This project is licensed under the **Proprietary Software License**. All intellectual rights to this code is belong to **[Andrii Korshylovskyi](http://www.linkedin.com/in/korshilovskiy)**
